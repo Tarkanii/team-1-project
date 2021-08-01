@@ -1,3 +1,35 @@
+.about{
+    background-color: var(--secondary-bg);
+}
+.about__title-box{
+    width: 198px;
+    text-align: center;
+}
 .about__label{
     color: var(--secondary-accent-color);
+    font-family: var(--special-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+}
+.about__title{
+    color: var(--accent-color);
+    font-family: var(--special-font);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.about__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    // background-image: url(../images/mobile/about-cow-web.webp), url(../images/mobile/about-cow.png);
+    // background-position-x: center;
+    // background-position-y: top;
+    // background-size: cover;
+    // background-repeat: no-repeat;
 }
