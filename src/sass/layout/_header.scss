@@ -100,11 +100,16 @@
     line-height: 1.31;
     font-weight: 700;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 22px;
     width: 186px;
     height: 44px;
     margin: 0 auto 20px;
+
+    .right-arrow {
+      width: 8px;
+      height: 16px;
+    }
   }
 }
 
@@ -156,12 +161,17 @@
     line-height: 1.31;
     font-weight: 700;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 22px;
     width: 160px;
     height: 44px;
     margin-bottom: 0px;
     margin-left: 30px;
+
+    .right-arrow {
+      width: 8px;
+      height: 16px;
+    }
   }
 
   .burger-btn {
@@ -236,11 +246,16 @@
       line-height: 1.31;
       font-weight: 700;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
       border-radius: 22px;
       width: 186px;
       height: 44px;
       margin: 0 auto 20px;
+
+      .right-arrow {
+        width: 8px;
+        height: 16px;
+      }
     }
   }
 
