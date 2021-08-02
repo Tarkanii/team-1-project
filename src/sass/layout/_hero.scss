@@ -1,5 +1,7 @@
 .hero-section {
   background-color: var(--cream-pink);
+  padding-top: 193px;
+  padding-bottom: 160px;
 }
 .hero-title {
   font-family: var(--special-font);
@@ -9,9 +11,8 @@
   text-transform: uppercase;
   color: var(--clear-white);
   width: 218px;
-  padding-left: 20px;
-  padding-top: 193px;
-  padding-bottom: 160px;
+  // padding-left: 20px;
+  // padding-top: 193px;
   &-text__red {
     color: var(--accent-color);
   }
@@ -22,13 +23,13 @@
   @media screen and (min-width: 768px) {
     font-size: 22px;
     width: 162px;
-    padding-left: 34px;
+    // padding-left: 34px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 38px;
     width: 277px;
-    padding-left: 115px;
+    // padding-left: 115px;
   }
 }
 .hero-counter {
