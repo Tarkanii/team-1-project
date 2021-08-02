@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+:root {
+  --accent-color: #d41443;
+  --secondary-accent-color: #fea5bb;
+  --clear-white: #ffffff;
+  --clear-black: #000000;
+  --secondary-text-color: #907e82;
+  --cream-pink: #ffb8ca;
+  --cofee-color: #f0d1a5;
+  --light-green: #c2e297;
+  --secondary-bg: #fff5f6;
+  --menu-bg: #e17992;
+  --button-hover: #ecebeb;
+  --menu-border-color: #e18298;
+  --special-font: Titan One, sans-serif;
+  --main-font: DM Sans, sans-serif;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  font-family: var(--main-font);
+  color: var(--clear-black);
+  letter-spacing: 0.04em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1050px;
+  }
+}
+
+.about {
+  background-color: var(--secondary-bg);
+}
+
+.about__title-box {
+  width: 200px;
+  text-align: center;
+}
+
+.about__label {
+  color: var(--secondary-accent-color);
+  font-family: var(--special-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about__title {
+  color: var(--accent-color);
+  font-family: var(--special-font);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.about__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 101px;
+  padding-bottom: 25px;
+}
+
+.about__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description__header {
+  width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.description__text {
+  color: var(--secondary-text-color);
+  width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.description__text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.about__image {
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+.about__btn {
+  position: relative;
+  width: 176px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  border-radius: 22px;
+}
+
+.about__btn::after {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  content: "";
+  width: 4px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url(../images/sprite.svg/#icon-right-arrow);
+  fill: var(--accent-color);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.accent-button {
+  border: none;
+  color: var(--clear-white);
+  background-color: var(--accent-color);
+}
+
+.accent-button:hover, .accent-button:focus {
+  background-color: #C7133E;
+}
+
+.secondary-button {
+  border: none;
+  color: var(--accent-color);
+  background-color: var(--clear-white);
+}
+
+.secondary-button:hover, .secondary-button:focus {
+  background-color: var(--button-hover);
+}
+/*# sourceMappingURL=main.css.map */

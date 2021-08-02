@@ -1,35 +1,106 @@
-// .about{
-//     background-color: var(--secondary-bg);
-// }
-// .about__title-box{
-//     width: 198px;
-//     text-align: center;
-// }
-// .about__label{
-//     color: var(--secondary-accent-color);
-//     font-family: var(--special-font);
-//     font-weight: 400;
-//     font-size: 18px;
-//     line-height: 1.16;
-//     text-transform: uppercase;
-// }
-// .about__title{
-//     color: var(--accent-color);
-//     font-family: var(--special-font);
-//     font-weight: 400;
-//     font-size: 34px;
-//     line-height: 1.14;
-//     letter-spacing: 0.04em;
-//     text-transform: uppercase;
-// }
-// .about__box{
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: flex-end;
-//     // background-image: url(../images/mobile/about-cow-web.webp), url(../images/mobile/about-cow.png);
-//     // background-position-x: center;
-//     // background-position-y: top;
-//     // background-size: cover;
-//     // background-repeat: no-repeat;
-// }
+
+.about{
+    background-color: var(--secondary-bg);
+    // background-image: 
+}
+.about__title-box{
+    width: 200px;
+    text-align: center;
+}
+.about__label{
+    color: var(--secondary-accent-color);
+    font-family: var(--special-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.about__title{
+    color: var(--accent-color);
+    font-family: var(--special-font);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+.about__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 101px;
+    padding-bottom: 25px;
+    // уточнить у Богдана если он задал паддинг топ след секции.
+
+    // background-image: url(../images/mobile/about-cow-web.webp), url(../images/mobile/about-cow.png);
+    // background-position-x: center;
+    // background-position-y: top;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+}
+.about__description{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+}
+.description__header{
+    width: 220px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.description__text{
+    color: var(--secondary-text-color);
+    width: 220px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0;
+    text-align: left;
+}
+.description__text:not(:last-child){
+    margin-bottom: 10px;
+}
+.about__image{
+    width: 100%;
+    margin-bottom: 46px;
+}
+.about__btn{
+    position: relative;
+    width:176px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    border-radius: 22px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.about__icon{
+    position: absolute;
+    top: 19px;
+    right: 32px;
+    width: 5px;
+    height: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.about__btn-box{
+    width:234px;
+    display: flex;
+    justify-content: flex-start;
+}
+
