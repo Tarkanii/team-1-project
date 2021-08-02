@@ -2,6 +2,19 @@
   background-color: var(--cream-pink);
   padding-top: 193px;
   padding-bottom: 160px;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-position-x: 85%;
+  width: 100%;
+  background-image: url('../../src/images/mobile/hero-ice-web.webp');
+}
+.hero-circle {
+  position: relative;
+  width: 346px;
+  height: 346px;
+  border-radius: 50%;
+  color: #ffa5ba;
+  left: 50%;
 }
 .hero-title {
   font-family: var(--special-font);
@@ -15,6 +28,8 @@
   // padding-top: 193px;
   &-text__red {
     color: var(--accent-color);
+    font-size: 48px;
+    line-height: 96.5%;
   }
 
   //   @media screen and (max-width: 767px) {
