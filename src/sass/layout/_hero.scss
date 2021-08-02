@@ -1,0 +1,152 @@
+.hero-section {
+  background-color: var(--cream-pink);
+  padding-top: 193px;
+  padding-bottom: 160px;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-position-x: 85%;
+  width: 100%;
+  background-image: url('../../src/images/mobile/hero-ice-web.webp');
+}
+.hero-circle {
+  position: relative;
+  width: 346px;
+  height: 346px;
+  border-radius: 50%;
+  color: #ffa5ba;
+  left: 50%;
+}
+.hero-title {
+  font-family: var(--special-font);
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--clear-white);
+  width: 218px;
+  // padding-left: 20px;
+  // padding-top: 193px;
+  &-text__red {
+    color: var(--accent-color);
+    font-size: 48px;
+    line-height: 96.5%;
+  }
+
+  //   @media screen and (max-width: 767px) {
+  //   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    width: 162px;
+    // padding-left: 34px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    width: 277px;
+    // padding-left: 115px;
+  }
+}
+.hero-counter {
+  display: none;
+}
+.style-btn {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+.hero-btn__list {
+  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 25px;
+  }
+}
+.hero-btn {
+  font-family: var(--main-font);
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 8px;
+  }
+
+  &__white {
+    background-color: var(--accent-color);
+    color: var(--clear-white);
+    transition: color 200ms cubic-bezier(0.17, 0.67, 0.86, 0.46),
+      background-color 200ms cubic-bezier(0.17, 0.67, 0.86, 0.46);
+    &:focus,
+    &:hover {
+      background-color: var(--button-hover);
+      color: var(--accent-color);
+    }
+  }
+
+  &__inverse {
+    background-color: var(--clear-white);
+    color: var(--accent-color);
+    transition: color 200ms cubic-bezier(0.17, 0.67, 0.86, 0.46),
+      background-color 200ms cubic-bezier(0.17, 0.67, 0.86, 0.46);
+    &:focus,
+    &:hover {
+      background-color: var(--accent-color);
+      color: var(--clear-white);
+    }
+  }
+}
+
+.hero-text {
+  font-family: var(--main-font);
+  font-size: 8px;
+  line-height: 150%;
+  width: 114px;
+  display: none;
+  color: var(--clear-white);
+  @media screen and (min-width: 767px) {
+    display: block;
+    margin-top: 66px;
+    margin-left: 154px;
+    padding-bottom: 59px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    font-size: 14px;
+    margin-top: 112px;
+    margin-left: 295px;
+    padding-bottom: 102px;
+  }
+}
+
+//   @media screen and (max-width: 767px) {
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//     screen and (min-resolution: 192dpi) and (max-width: 767px),
+//     screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//   }
+
+//   @media screen and (min-width: 768px) {
+//   }
+//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//     screen and (min-resolution: 192dpi) and (min-width: 768px),
+//     screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//   }
+
+//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//     screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//   }
