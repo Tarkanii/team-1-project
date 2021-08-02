@@ -8,17 +8,25 @@
     padding-top: 102px;
     padding-bottom: 0px;
   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 171px;
+  }
 }
 .hero-container {
   position: relative;
 }
+
 .hero-bg-grp {
   position: absolute;
   left: 36px;
   bottom: 255px;
   @media screen and (min-width: 768px) {
     left: 307px;
-    bottom: 400px;
+    bottom: 370px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 475px;
+    bottom: 540px;
   }
 }
 .hero-bg-elipse {
@@ -28,6 +36,14 @@
   border-radius: 50%;
   position: absolute;
   left: 30%;
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+  }
 }
 .hero-bg-img {
   width: 100%;
@@ -39,8 +55,16 @@
   @media screen and (min-width: 768px) {
     background-image: url('../../src/images/tablet/hero-ice-web.webp');
     background-position: bottom;
-    background-position-y: 65px;
+    background-position-y: 33px;
     background-position-x: 71px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url('../../src/images/desktop/hero-ice-web.webp');
+    background-position: bottom;
+    background-position-y: 33px;
+    background-position-x: 71px;
+    padding-bottom: 50px;
   }
 }
 
@@ -69,7 +93,7 @@
     // padding-left: 34px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 38px;
     width: 277px;
     // padding-left: 115px;
@@ -81,9 +105,33 @@
 }
 .hero-milk {
   position: absolute;
+  bottom: 28px;
+  @media screen and (min-width: 1280px) {
+    bottom: 45px;
+  }
 }
 .hero-counter {
   display: none;
+  margin-left: 651px;
+  margin-top: -170px;
+  &__number {
+    font-family: var(--special-font);
+    color: #d41443;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: right;
+  }
+  &__text {
+    font-family: var(--main-font);
+    font-size: 7px;
+    line-height: 10px;
+    text-align: right;
+    color: var(--clear-white);
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+  }
 }
 .style-btn {
   padding: 10px;
@@ -92,7 +140,7 @@
 }
 .hero-btn__list {
   margin-top: 20px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 25px;
   }
 }
@@ -106,10 +154,12 @@
   display: flex;
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
+    padding-bottom: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
+    padding-bottom: 10px;
   }
 
   &__item:not(:last-child) {
@@ -142,6 +192,7 @@
 }
 
 .hero-text {
+  position: absolute;
   font-family: var(--main-font);
   font-size: 8px;
   line-height: 150%;
@@ -150,16 +201,14 @@
   color: var(--clear-white);
   @media screen and (min-width: 767px) {
     display: block;
-    margin-top: 66px;
+    margin-top: 26px;
     margin-left: 154px;
-    padding-bottom: 59px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 200px;
     font-size: 14px;
     margin-top: 112px;
     margin-left: 295px;
-    padding-bottom: 102px;
   }
 }
 
