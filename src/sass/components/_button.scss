@@ -1,0 +1,18 @@
+.accent-button {
+    border: none;
+    color: var(--clear-white);
+    background-color: var(--accent-color);
+    &:hover,
+    &:focus {
+      background-color: #C7133E;
+    }
+  }
+  .secondary-button {
+    border: none;
+    color: var(--accent-color);
+    background-color: var(--clear-white);
+    &:hover,
+    &:focus {
+      background-color: var(--button-hover);
+    }
+  } 
