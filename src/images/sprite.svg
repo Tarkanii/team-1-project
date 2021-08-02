@@ -28,7 +28,9 @@
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
 </symbol>
 <symbol id="icon-ellipse" viewBox="0 0 32 32">
-<path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32.199 16c0 8.837-7.208 16-16.099 16s-16.099-7.163-16.099-16c0-8.837 7.208-16 16.099-16s16.099 7.163 16.099 16z"></path>
+<path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32.199 16c0 8.837-7.208 16-16.099 16s-16.099-7.163-16.099-16c0-8.837 7.208-16 16.099-16s16.099 7.163 16.099 16z">
+</path>
+</symbol>
 <symbol id="icon-products-dots" viewBox="0 0 139 32">
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M85.333 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
