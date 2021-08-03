@@ -1,9 +1,10 @@
 .hero-section {
   background-color: var(--cream-pink);
+  margin: 0 auto;
   // width: 100%;
   // padding-top: 193px;
   // padding-bottom: 154px;
-  margin: 0 auto;
+
   // height: 309px;
 
   // @media screen and (min-width: 768px) {
@@ -19,7 +20,8 @@
 .hero-container {
   // position: relative;
   // height: 100%;
-
+  // box-sizing: border-box;
+  position: relative;
   padding-top: 193px;
   height: 309px;
   background-size: 171px 410px, 346px 344px;
@@ -27,6 +29,12 @@
   background-image: url('../../src/images/mobile/hero-ice.png'),
     url('../../src/images/mobile/hero-ellipse-mobile.png');
   background-position: bottom 0px right 32px, bottom 80px right -50px;
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url('../../src/images/mobile/hero-ice@2x.png'),
+      url('../../src/images/mobile/hero-ellipse-mobile.png');
+  }
   @media screen and (min-width: 480px) {
     background-position: bottom 0px right 85px, bottom 80px right 0px;
   }
@@ -40,6 +48,14 @@
     background-position: bottom 0px right 200px, bottom 0px right 0px, bottom 46px right 97px,
       bottom 28px left 34px;
   }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url('../../src/images/tablet/hero-ice@2x.png'),
+      url('../../src/images/tablet/hero-girl@2x.png'),
+      url('../../src/images/tablet/hero-ellipse-tablet.png'),
+      url('../../src/images/tablet/hero-milk@2x.png');
+  }
   @media screen and (min-width: 1280px) {
     padding-top: 171px;
     height: 500px;
@@ -51,62 +67,19 @@
     background-position: bottom 0px right 298px, bottom 0px right 0px, bottom 70px right 177px,
       bottom 45px left 0px;
   }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url('../../src/images/desktop/hero-ice@2x.png'),
+      url('../../src/images/desktop/hero-girl@2x.png'),
+      url('../../src/images/desktop/hero-ellipse-desktop.png'),
+      url('../../src/images/desktop/hero-milk@2x.png');
+  }
 }
 .hero-content {
   display: flex;
   justify-content: space-between;
 }
-// .hero-bg-grp {
-//   position: absolute;
-//   left: 36px;
-//   bottom: 255px;
-//   @media screen and (min-width: 768px) {
-//     left: 307px;
-//     bottom: 370px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     left: 475px;
-//     bottom: 540px;
-//   }
-// }
-// .hero-bg__elipse {
-//   width: 346px;
-//   height: 344px;
-//   background-color: #ffa5ba;
-//   border-radius: 50%;
-//   position: absolute;
-//   left: 30%;
-//   @media screen and (min-width: 768px) {
-//     width: 324px;
-//     height: 322px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     width: 538px;
-//     height: 538px;
-//   }
-// }
-// .hero-bg__img {
-//   width: 100%;
-//   height: 100%;
-//   padding-bottom: 70px;
-//   background-repeat: no-repeat;
-//   background-position-x: 45%;
-//   background-image: url('../../src/images/mobile/hero-ice-web.webp');
-//   @media screen and (min-width: 768px) {
-//     background-image: url('../../src/images/tablet/hero-ice-web.webp');
-//     background-position: bottom;
-//     background-position-y: 33px;
-//     background-position-x: 71px;
-//     padding-bottom: 50px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     background-image: url('../../src/images/desktop/hero-ice-web.webp');
-//     background-position: bottom;
-//     background-position-y: 33px;
-//     background-position-x: 71px;
-//     padding-bottom: 50px;
-//   }
-// }
 
 .hero-title {
   font-family: var(--special-font);
@@ -131,18 +104,6 @@
     width: 277px;
   }
 }
-// .hero-girl {
-//   position: absolute;
-//   bottom: 0;
-//   right: 35px;
-// }
-// .hero-milk {
-//   position: absolute;
-//   bottom: 28px;
-//   @media screen and (min-width: 1280px) {
-//     bottom: 45px;
-//   }
-// }
 
 .hero-counter {
   display: none;
@@ -157,31 +118,38 @@
     }
   }
   &__number {
+    position: relative;
     font-family: var(--special-font);
     color: #d41443;
     font-size: 28px;
     line-height: 32px;
     text-align: right;
+    z-index: 0;
     // background-color: transparent;
     // width: 50px;
     // height: 50px;
     // border-radius: 50%;
     // box-shadow: 30px -30px 0px 0px ivory;
 
-    // &::after {
-    //   // position: absolute;
-    //   // left: 70%;
-    //   // top: 0%;
-    //   background-color: #fff;
-    //   // content: '';
-    //   border-radius: 50%;
-    //   width: 16px;
-    //   height: 16px;
-    //   @media screen and (min-width: 1280px) {
-    //     width: 30px;
-    //     height: 30px;
-    //   }
-    // }
+    &::after {
+      z-index: -1;
+      position: absolute;
+      top: -3px;
+      right: -7px;
+      // left: 70%;
+      // top: 0%;
+      background-color: #fff;
+      content: '';
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      @media screen and (min-width: 1280px) {
+        width: 30px;
+        height: 30px;
+        top: -5px;
+        right: -20px;
+      }
+    }
     @media screen and (min-width: 1280px) {
       font-size: 46px;
       line-height: 53px;
@@ -261,9 +229,21 @@
     }
   }
 }
-
-.hero-text {
+.hero__secondary-text {
   position: absolute;
+
+  display: none;
+  @media screen and (min-width: 767px) {
+    display: block;
+    left: 150px;
+    top: 290px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 180px;
+    top: 485px;
+  }
+}
+.hero-text {
   font-family: var(--main-font);
   font-size: 8px;
   line-height: 150%;
@@ -272,16 +252,32 @@
   color: var(--clear-white);
   @media screen and (min-width: 767px) {
     display: block;
-    margin-top: 26px;
-    margin-left: 154px;
+    // margin-top: 26px;
+    // margin-left: 154px;
   }
   @media screen and (min-width: 1280px) {
     width: 200px;
     font-size: 14px;
-    margin-top: 112px;
-    margin-left: 180px;
+    // margin-top: 112px;
+    // margin-left: 180px;
   }
 }
+.hero-arrow__image {
+  margin-top: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // position: absolute;
+  // left: 0;
+  // bottom: -20px;
+}
+
+// .hero__arrow-svg {
+// }
 
 //   @media screen and (max-width: 767px) {
 //   }
@@ -305,3 +301,72 @@
 //     screen and (min-resolution: 192dpi) and (min-width: 1200px),
 //     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 //   }
+// .hero-bg-grp {
+//   position: absolute;
+//   left: 36px;
+//   bottom: 255px;
+//   @media screen and (min-width: 768px) {
+//     left: 307px;
+//     bottom: 370px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     left: 475px;
+//     bottom: 540px;
+//   }
+// }
+// .hero-bg__elipse {
+//   width: 346px;
+//   height: 344px;
+//   background-color: #ffa5ba;
+//   border-radius: 50%;
+//   position: absolute;
+//   left: 30%;
+//   @media screen and (min-width: 768px) {
+//     width: 324px;
+//     height: 322px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     width: 538px;
+//     height: 538px;
+//   }
+// }
+// .hero-bg__img {
+//   width: 100%;
+//   height: 100%;
+//   padding-bottom: 70px;
+//   background-repeat: no-repeat;
+//   background-position-x: 45%;
+//   background-image: url('../../src/images/mobile/hero-ice-web.webp');
+//   @media screen and (min-width: 768px) {
+//     background-image: url('../../src/images/tablet/hero-ice-web.webp');
+//     background-position: bottom;
+//     background-position-y: 33px;
+//     background-position-x: 71px;
+//     padding-bottom: 50px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     background-image: url('../../src/images/desktop/hero-ice-web.webp');
+//     background-position: bottom;
+//     background-position-y: 33px;
+//     background-position-x: 71px;
+//     padding-bottom: 50px;
+//   }
+// }
+// .hero-girl {
+//   position: absolute;
+//   bottom: 0;
+//   right: 35px;
+// }
+// .hero-milk {
+//   position: absolute;
+//   bottom: 28px;
+//   @media screen and (min-width: 1280px) {
+//     bottom: 45px;
+//   }
+// }
+// .hero-counter__number::after {
+//   width: 30px;
+//   height: 30px;
+//   background-color: #fff;
+//   box-shadow: ivory;
+// }
