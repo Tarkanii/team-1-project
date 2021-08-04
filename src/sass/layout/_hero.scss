@@ -386,56 +386,58 @@
 //   box-shadow: ivory;
 // }
 
-.box {
-  overflow: hidden;
-  animation: cow-opaque 5s ease-in-out forwards;
-  margin-top: -23.8%;
-}
-
-.cow {
-  width: 300px;
-  height: 320px;
-  background-repeat: no-repeat;
-  background-size: 300px 320px;
-  z-index: 12;
-}
-
-.beef {
-  animation: running-cow 5s cubic-bezier(0.62, 0.64, 0.45, 0.97) forwards;
-  margin-top: 20px;
-}
-
-.beef div {
-  background-image: url('../../src/images/desktop/cow.png');
-  animation: little-jump 0.2s infinite;
-}
-
-@keyframes running-cow {
-  100% {
-    transform: translatex(100%);
+@media screen and (min-width: 1280px) {
+  .box {
+    overflow: hidden;
+    animation: cow-opaque 5s ease-in-out forwards;
+    margin-top: -23.8%;
   }
-}
 
-@keyframes little-jump {
-  0% {
-    transform: rotate(-10deg);
+  .cow {
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: 300px 320px;
+    z-index: 12;
   }
-  50% {
-    transform: rotate(10deg);
-  }
-  100% {
-    transform: rotate(-10deg);
-  }
-}
 
-@keyframes cow-opaque {
-  0% {
-    opacity: 1;
+  .beef {
+    animation: running-cow 5s cubic-bezier(0.62, 0.64, 0.45, 0.97) forwards;
+    margin-top: 20px;
   }
-  50% {
-    opacity: 0.9;
+
+  .beef div {
+    background-image: url('../../src/images/desktop/cow.png');
+    animation: little-jump 0.2s infinite;
   }
-  100% {
-    opacity: 0;
+
+  @keyframes running-cow {
+    100% {
+      transform: translatex(100%);
+    }
+  }
+
+  @keyframes little-jump {
+    0% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+
+  @keyframes cow-opaque {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 }
