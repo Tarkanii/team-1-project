@@ -1,12 +1,13 @@
 <section class="products">
   <div class="container">
     <p>100% natural</p>
-    <h2>products</h2>
+    <h2 class="products__title">products</h2>
     <ul class="products__list list">
-      <li class="products__list-item">
-        <picture>
+      <li class="products__list-item ice">
+        <picture class="products__image-box">
           <!-- DESKTOP -->
           <source
+            class="products__image"
             srcset="
               ./images/desktop/product-ice-web.webp    1x,
               ./images/desktop/product-ice-web@2x.webp 2x
@@ -15,12 +16,14 @@
             media="(min-width:1280px)"
           />
           <source
+            class="products__image"
             srcset="./images/desktop/product-ice.png 1x, ./images/desktop/product-ice@2x.png 2x"
             type="image/png"
             media="(min-width:1280px)"
           />
           <!-- TABLET -->
           <source
+            class="products__image"
             srcset="
               ./images/tablet/product-ice-web.webp    1x,
               ./images/tablet/product-ice-web@2x.webp 2x
@@ -29,12 +32,14 @@
             media="(min-width:768px)"
           />
           <source
+            class="products__image"
             srcset="./images/tablet/product-ice.png 1x, ./images/tablet/product-ice@2x.png 2x"
             type="image/png"
             media="(min-width:768px)"
           />
           <!-- MOBILE -->
           <source
+            class="products__image"
             srcset="
               ./images/mobile/product-ice-web.webp    1x,
               ./images/mobile/product-ice-web@2x.webp 2x
@@ -43,44 +48,46 @@
             media="(max-width:767px)"
           />
           <source
+            class="products__image"
             srcset="./images/tablet/product-ice.png 1x, ./images/tablet/product-ice@2x.png 2x"
             type=" image/png"
             media="(max-width:767px)"
           />
-          <img src="./images/desktop/product-ice.png" alt="Мороженое" />
+          <img class="products__image" src="./images/desktop/product-ice.png" alt="Мороженое" />
         </picture>
-        <h3>ice cream</h3>
-        <svg width="26px" height="6px">
+        <h3 class="products__item-title">ice cream</h3>
+        <svg width="26px" height="6px" class="icon-poducts-dots">
           <use href="./images/sprite.svg#icon-products-dots"></use>
         </svg>
-        <p>
+        <p class="products__item-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
         <a href="" class="link">
           <picture>
-          <source
-            srcset="
-              ./images/desktop/products-arrow-button-web.webp 1x,
-              ./images/desktop/products-arrow-button-web@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/desktop/products-arrow-button.png 1x,
-              ./images/desktop/products-arrow-button@2x.png 2x
-            "
-            type="image/png"
-          />
-          <img src="./images/desktop/products-arrow-button.png" alt="" />
-        </picture>
+            <source
+              srcset="
+                ./images/desktop/products-arrow-button-web.webp    1x,
+                ./images/desktop/products-arrow-button-web@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/desktop/products-arrow-button.png    1x,
+                ./images/desktop/products-arrow-button@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="./images/desktop/products-arrow-button.png" alt="" />
+          </picture>
         </a>
       </li>
-      <li class="products__list-item">
-        <picture>
+      <li class="products__list-item coffee">
+        <picture class="products__image-box">
           <!-- DESKTOP -->
           <source
+            class="products__image"
             srcset="
               ./images/desktop/product-coffee-web.webp    1x,
               ./images/desktop/product-coffee-web@2x.webp 2x
@@ -89,6 +96,7 @@
             media="(min-width:1280px)"
           />
           <source
+            class="products__image"
             srcset="
               ./images/desktop/product-coffee.png    1x,
               ./images/desktop/product-coffee@2x.png 2x
@@ -98,6 +106,7 @@
           />
           <!-- TABLET -->
           <source
+            class="products__image"
             srcset="
               ./images/tablet/product-coffee-web.webp    1x,
               ./images/tablet/product-coffee-web@2x.webp 2x
@@ -106,12 +115,14 @@
             media="(min-width:768px)"
           />
           <source
+            class="products__image"
             srcset="./images/tablet/product-coffee.png 1x, ./images/tablet/product-coffee@2x.png 2x"
             type="image/png"
             media="(min-width:768px)"
           />
           <!-- MOBILE -->
           <source
+            class="products__image"
             srcset="
               ./images/mobile/product-coffee-web.webp    1x,
               ./images/mobile/product-coffee-web@2x.webp 2x
@@ -120,44 +131,47 @@
             media="(max-width:767px)"
           />
           <source
+            class="products__image"
             srcset="./images/tablet/product-coffee.png 1x, ./images/tablet/product-coffee@2x.png 2x"
             type=" image/png"
             media="(max-width:767px)"
           />
-          <img src="./images/desktop/product-coffee.png" alt="Кофе" />
+          <img class="products__image" src="./images/desktop/product-coffee.png" alt="Кофе" />
         </picture>
-        <h3>ice coffee</h3>
-        <svg width="26px" height="6px">
+        <h3 class="products__item-title">ice coffee</h3>
+        <svg width="26px" height="6px" class="icon-poducts-dots">
           <use href="./images/sprite.svg#icon-products-dots"></use>
         </svg>
-        <p>
+        <p class="products__item-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
+
         <a href="" class="link">
           <picture>
-          <source
-            srcset="
-              ./images/desktop/products-arrow-button-web.webp 1x,
-              ./images/desktop/products-arrow-button-web@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/desktop/products-arrow-button.png 1x,
-              ./images/desktop/products-arrow-button@2x.png 2x
-            "
-            type="image/png"
-          />
-          <img src="./images/desktop/products-arrow-button.png" alt="" />
-        </picture>
+            <source
+              srcset="
+                ./images/desktop/products-arrow-button-web.webp    1x,
+                ./images/desktop/products-arrow-button-web@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/desktop/products-arrow-button.png    1x,
+                ./images/desktop/products-arrow-button@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="./images/desktop/products-arrow-button.png" alt="" />
+          </picture>
         </a>
       </li>
-      <li class="products__list-item">
-        <picture>
+      <li class="products__list-item shake">
+        <picture class="products__image-box">
           <!-- DESKTOP -->
           <source
+            class="products__image"
             srcset="
               ./images/desktop/product-shake-web.webp    1x,
               ./images/desktop/product-shake-web@2x.webp 2x
@@ -166,12 +180,14 @@
             media="(min-width:1280px)"
           />
           <source
+            class="products__image"
             srcset="./images/desktop/product-shake.png 1x, ./images/desktop/product-shake@2x.png 2x"
             type="image/png"
             media="(min-width:1280px)"
           />
           <!-- TABLET -->
           <source
+            class="products__image"
             srcset="
               ./images/tablet/product-shake-web.webp    1x,
               ./images/tablet/product-shake-web@2x.webp 2x
@@ -180,12 +196,14 @@
             media="(min-width:768px)"
           />
           <source
+            class="products__image"
             srcset="./images/tablet/product-shake.png 1x, ./images/tablet/product-shake@2x.png 2x"
             type="image/png"
             media="(min-width:768px)"
           />
           <!-- MOBILE -->
           <source
+            class="products__image"
             srcset="
               ./images/mobile/product-shake-web.webp    1x,
               ./images/mobile/product-shake-web@2x.webp 2x
@@ -194,38 +212,39 @@
             media="(max-width:767px)"
           />
           <source
+            class="products__image"
             srcset="./images/tablet/product-shake.png 1x, ./images/tablet/product-shake@2x.png 2x"
             type=" image/png"
             media="(max-width:767px)"
           />
-          <img src="./images/desktop/product-shake.png" alt="Милкшейк" />
+          <img class="products__image" src="./images/desktop/product-shake.png" alt="Милкшейк" />
         </picture>
-        <h3>milkshakes</h3>
-        <svg width="26px" height="6px">
+        <h3 class="products__item-title">milkshakes</h3>
+        <svg width="26px" height="6px" class="icon-poducts-dots">
           <use href="./images/sprite.svg#icon-products-dots"></use>
         </svg>
-        <p>
+        <p class="products__item-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
         <a href="" class="link">
           <picture>
-          <source
-            srcset="
-              ./images/desktop/products-arrow-button-web.webp 1x,
-              ./images/desktop/products-arrow-button-web@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            srcset="
-              ./images/desktop/products-arrow-button.png 1x,
-              ./images/desktop/products-arrow-button@2x.png 2x
-            "
-            type="image/png"
-          />
-          <img src="./images/desktop/products-arrow-button.png" alt="" />
-        </picture>
+            <source
+              srcset="
+                ./images/desktop/products-arrow-button-web.webp    1x,
+                ./images/desktop/products-arrow-button-web@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./images/desktop/products-arrow-button.png    1x,
+                ./images/desktop/products-arrow-button@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img src="./images/desktop/products-arrow-button.png" alt="" />
+          </picture>
         </a>
       </li>
     </ul>
