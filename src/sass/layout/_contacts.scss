@@ -7,8 +7,6 @@
     var(--clear-white) 0% 7%,
     var(--secondary-bg) 7% 100%
   );
-  background-image: url('../images/desktop/contacts-bg.png');
-  background-position: left top 100px;
 }
 
 .shops {
@@ -175,6 +173,8 @@
       var(--clear-white) 0% 23%,
       var(--secondary-bg) 23% 100%
     );
+    background-image: url('./src/images/desktop/contacts-bg.png');
+    background-position: left top 100px;
   }
 
   .shops {
