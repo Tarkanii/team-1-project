@@ -43,7 +43,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .about__description {
   width: 220px;
   display: flex;
@@ -71,7 +70,6 @@
 .about__picture {
   margin-bottom: 46px;
 }
-
 .about__btn {
   box-sizing: border-box;
   //   align-self: flex-start;
@@ -97,7 +95,6 @@
   height: 10px;
   margin-left: 18px;
 }
-
 @media screen and (max-width: 767px) {
   .about {
     background-image: url(../images/mobile/about-bg-web.webp), url(../images/mobile/about-bg.png);
@@ -127,7 +124,6 @@
   }
   .about__title {
     font-size: 48px;
-
     letter-spacing: 0.04em;
     text-align: center;
   }
@@ -284,9 +280,7 @@
       url(../images/desktop/about-bg@2x.png);
   }
 }
-
 // Модалка
-
 body .about-modal-open {
   height: 100vh;
   overflow: hidden;
@@ -323,7 +317,6 @@ body .about-modal-open {
   background-color: rgb(252, 172, 191);
   cursor: pointer;
 }
-
 .about-modal__closebtn {
   display: flex;
   justify-content: center;
@@ -340,12 +333,10 @@ body .about-modal-open {
   cursor: pointer;
   padding: 0;
 }
-
 .about-modal__closebtn-icon {
   margin: auto;
   fill: var(--accent-color);
 }
-
 @media screen and (min-width: 480px) {
   .about-modal {
     width: 80%;
@@ -358,7 +349,6 @@ body .about-modal-open {
     height: 80%;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .about-modal {
     width: 50%;
@@ -371,19 +361,17 @@ body .about-modal-open {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .about-modal-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   &__box {
     cursor: pointer;
   }
   &__head {
     display: block;
-    color: #fff5f6;
+    color: #FFF5F6;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.15;
@@ -399,11 +387,9 @@ body .about-modal-open {
     width: 100%;
   }
 }
-
 .about-modal-form__text:not(:last-child) {
   margin-bottom: 10px;
 }
-
 @media screen and(min-width: 1280px) {
   .about-modal-form__head {
     line-height: 1.15;
