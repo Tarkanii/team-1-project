@@ -6,6 +6,9 @@
   &:hover,
   &:focus {
     background-color: #c7133e;
+    animation-name: pulse;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
   }
 }
 .secondary-button {
@@ -16,6 +19,9 @@
   &:hover,
   &:focus {
     background-color: var(--button-hover);
+    animation-name: pulse;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
   }
 }
 
