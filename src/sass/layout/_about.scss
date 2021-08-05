@@ -44,6 +44,7 @@
   align-items: center;
 }
 .about__description {
+  position: relative;
   width: 220px;
   display: flex;
   flex-direction: column;
@@ -143,6 +144,7 @@
     align-items: flex-start;
   }
   .about__description {
+    position: relative;
     width: calc((700px - 17px) / 2);
     display: flex;
     flex-direction: column;
@@ -228,6 +230,7 @@
     align-items: flex-start;
   }
   .about__description {
+    position: relative;
     width: calc((1050px - 17px) / 2);
     display: flex;
     flex-direction: column;
@@ -280,118 +283,248 @@
       url(../images/desktop/about-bg@2x.png);
   }
 }
-// Модалка
-body .about-modal-open {
-  height: 100vh;
-  overflow: hidden;
-}
-.about-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.2);
+// Моя модалка
+.modal-description {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  padding: 20px 20px;
+  // max-height: 81vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   opacity: 1;
-  transition: opacity 500ms linear, visibility 500ms linear;
-  transform: scale(1);
+  visibility: visible;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: auto;
+  background-color: var(--secondary-bg);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.14),
+    0px 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 22px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    // overflow-y: auto;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 54px;
+    padding-right: 50px;
+  }
 }
-.is-hidden {
+.modal-description.is-hidden {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  padding: 20px 20px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 30px;
+    left: -20px;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 54px;
+    padding-right: 50px;
+  }
 }
-.about-backdrop.is-hidden.about-modal {
-  transform: scale(0, 5);
-}
-.about-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  padding: 40px;
+.description-extend__button {
+  box-sizing: border-box;
+  width: 176px;
+  min-height: 44px;
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: auto;
   border-radius: 22px;
-  background-color: rgb(252, 172, 191);
-  cursor: pointer;
 }
-.about-modal__closebtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid var(--accent-color);
-  background-color: transparent;
-  background-position: center;
-  cursor: pointer;
-  padding: 0;
-}
-.about-modal__closebtn-icon {
-  margin: auto;
-  fill: var(--accent-color);
-}
-@media screen and (min-width: 480px) {
-  .about-modal {
-    width: 80%;
-    height: 80%;
+
+.description-extend__header {
+  width: 220px;
+  font-size: 12px;
+  line-height: 1.58;
+  text-align: left;
+  margin-bottom: 37px;
+  letter-spacing: 0;
+  text-align: left;
+  @media screen and (min-width: 768px) {
+    letter-spacing: 0;
+    width: 340px;
+    font-size: 14px;
+    line-height: 1.78;
+    text-align: left;
+    margin-bottom: 40px;
   }
-}
-@media screen and(min-width: 768px) {
-  .about-modal {
-    width: 60%;
-    height: 80%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .about-modal {
-    width: 50%;
-    height: 80%;
-  }
-}
-.about-modal__closebtn:hover .about-modal__closebtn-icon,
-.about-modal__closebtn:focus .about-modal__closebtn-icon {
-  fill: var(--accent-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.about-modal-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  &__box {
-    cursor: pointer;
-  }
-  &__head {
-    display: block;
-    color: #fff5f6;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-align: center;
-    margin-bottom: 12px;
-  }
-  &__text {
+  @media screen and (min-width: 1280px) {
+    width: 463px;
     font-size: 16px;
-    color: rgba(144, 126, 130, 1);
-    margin-top: 10px;
+    line-height: 1.75;
+    text-align: left;
+    margin-bottom: 35px;
     letter-spacing: 0.04em;
-    width: 100%;
   }
 }
-.about-modal-form__text:not(:last-child) {
-  margin-bottom: 10px;
-}
-@media screen and(min-width: 1280px) {
-  .about-modal-form__head {
-    line-height: 1.15;
+.description-extend__text {
+  width: 220px;
+  color: var(--secondary-text-color);
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.58;
+  letter-spacing: 0;
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    font-size: 14px;
+    line-height: 1.78;
+    text-align: left;
+    margin-bottom: 39px;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 463px;
+    font-size: 14px;
+    line-height: 1.78;
+    text-align: left;
+    margin-bottom: 25px;
+    letter-spacing: 0.04em;
   }
 }
+.description-extend__text:nth-of-type(2n + 2) {
+  margin-bottom: 19px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 25px;
+  }
+}
+.description-extend__button {
+}
+// Модалка
+// body .about-modal-open {
+//   height: 100vh;
+//   overflow: hidden;
+// }
+// .about-backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   z-index: 100;
+//   background-color: rgba(0, 0, 0, 0.2);
+//   opacity: 1;
+//   transition: opacity 500ms linear, visibility 500ms linear;
+//   transform: scale(1);
+// }
+// .is-hidden {
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
+// .about-backdrop.is-hidden.about-modal {
+//   transform: scale(0, 5);
+// }
+// .about-modal {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 80%;
+//   height: 80%;
+//   padding: 40px;
+//   border-radius: 22px;
+//   background-color: rgb(252, 172, 191);
+//   overflow: auto;
+//   // cursor: pointer;
+// }
+// .about-modal__closebtn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+//   width: 30px;
+//   height: 30px;
+//   border-radius: 50%;
+//   border: 1px solid var(--accent-color);
+//   background-color: transparent;
+//   background-position: center;
+//   cursor: pointer;
+//   padding: 0;
+// }
+// .about-modal__closebtn-icon {
+//   margin: auto;
+//   fill: var(--accent-color);
+// }
+// @media screen and (min-width: 480px) {
+//   .about-modal {
+//     width: 80%;
+//     height: 80%;
+//   }
+// }
+// @media screen and(min-width: 768px) {
+//   .about-modal {
+//     width: 60%;
+//     height: 80%;
+//   }
+// }
+// @media screen and (min-width: 1280px) {
+//   .about-modal {
+//     width: 50%;
+//     height: 80%;
+//   }
+// }
+// .about-modal__closebtn:hover .about-modal__closebtn-icon,
+// .about-modal__closebtn:focus .about-modal__closebtn-icon {
+//   fill: var(--accent-color);
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .about-modal-form {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   &__box {
+//     // cursor: pointer;
+//   }
+//   &__head {
+//     display: block;
+//     color: #fff5f6;
+//     font-weight: 700;
+//     font-size: 24px;
+//     line-height: 1.15;
+//     letter-spacing: 0.04em;
+//     text-align: center;
+//     margin-bottom: 12px;
+//   }
+//   &__text {
+//     font-size: 16px;
+//     color: rgba(144, 126, 130, 1);
+//     margin-top: 10px;
+//     letter-spacing: 0.04em;
+//     width: 100%;
+//   }
+// }
+// .about-modal-form__text:not(:last-child) {
+//   margin-bottom: 10px;
+// }
+// @media screen and(min-width: 1280px) {
+//   .about-modal-form__head {
+//     line-height: 1.15;
+//   }
+// }
