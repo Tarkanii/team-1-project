@@ -75,10 +75,16 @@
   color: var(--clear-white);
   width: 218px;
   margin: 0;
-  &--red {
+  &-accent {
     color: var(--accent-color);
     font-size: 48px;
     line-height: 0.96;
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+    }
   }
   @media screen and (min-width: 768px) {
     font-size: 22px;
