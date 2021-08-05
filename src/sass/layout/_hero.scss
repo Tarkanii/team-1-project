@@ -150,7 +150,7 @@
 }
 
 .hero__btn {
-  &--list {
+  &-list {
     display: flex;
   }
 
@@ -168,10 +168,10 @@
   @media screen and (min-width: 1280px) {
     font-size: 14px;
   }
-  &--item {
+  &-item {
     margin-top: 25px;
   }
-  &--item:not(:last-child) {
+  &-item:not(:last-child) {
     margin-right: 8px;
     @media screen and (min-width: 1280px) {
       margin-right: 15px;
