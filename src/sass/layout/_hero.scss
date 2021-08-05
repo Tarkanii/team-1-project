@@ -1,28 +1,9 @@
 .hero-section {
   background-color: var(--cream-pink);
   margin: 0 auto;
-  // box-sizing: border-box;
-  // width: 100%;
-  // padding-top: 193px;
-  // padding-bottom: 154px;
-
-  // height: 309px;
-
-  // @media screen and (min-width: 768px) {
-  //   // padding-top: 102px;
-  //   // height: 297px;
-  //   // padding-bottom: 0px;
-  // }
-  // @media screen and (min-width: 1280px) {
-  //   // padding-top: 171px;
-  //   // height: 484px;
-  // }
 }
+
 .hero-container {
-  // overflow-x: hidden;
-  // position: relative;
-  // height: 100%;
-  // box-sizing: border-box;
   position: relative;
   padding-top: 193px;
   height: 502px;
@@ -85,6 +66,7 @@
 }
 
 .hero-title {
+  font-weight: 400;
   font-family: var(--special-font);
   font-size: 26px;
   line-height: 1.15;
@@ -112,8 +94,6 @@
   display: none;
   width: 50px;
   height: 50px;
-  // margin-left: 651px;
-  // margin-top: -170px;
   &__item:not(:last-child) {
     padding-bottom: 13px;
     @media screen and (min-width: 1280px) {
@@ -128,19 +108,12 @@
     line-height: 32px;
     text-align: right;
     z-index: 0;
-    // background-color: transparent;
-    // width: 50px;
-    // height: 50px;
-    // border-radius: 50%;
-    // box-shadow: 30px -30px 0px 0px ivory;
 
     &::after {
       z-index: -1;
       position: absolute;
       top: -3px;
       right: -7px;
-      // left: 70%;
-      // top: 0%;
       background-color: #fff;
       content: '';
       border-radius: 50%;
@@ -167,14 +140,12 @@
     @media screen and (min-width: 1280px) {
       font-size: 14px;
       line-height: 18px;
-      // width: 90px;
     }
   }
 
   @media screen and (min-width: 768px) {
     display: block;
     position: relative;
-    // position: absolute;
   }
 }
 
@@ -265,174 +236,68 @@
   color: var(--clear-white);
   @media screen and (min-width: 767px) {
     display: block;
-    // margin-top: 26px;
-    // margin-left: 154px;
   }
   @media screen and (min-width: 1280px) {
     width: 200px;
     font-size: 14px;
-    // margin-top: 112px;
-    // margin-left: 180px;
   }
 }
 .button-right-arrow-hero {
   margin-top: 8px;
-  // background-color: #fff;
-  // border-radius: 50%;
-  // width: 30px;
-  // height: 30px;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // position: absolute;
-  // left: 0;
-  // bottom: -20px;
 }
 
-// .hero__arrow-svg {
-// }
+@media screen and (min-width: 1280px) {
+  .box {
+    overflow: hidden;
+    animation: cow-opaque 5s ease-in-out forwards;
+    margin-top: -23.8%;
+  }
 
-//   @media screen and (max-width: 767px) {
-//   }
+  .cow {
+    width: 300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: 300px 320px;
+    z-index: 12;
+  }
 
-//   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-//     screen and (min-resolution: 192dpi) and (max-width: 767px),
-//     screen and (min-resolution: 2dppx) and (max-width: 767px) {
-//   }
+  .beef {
+    animation: running-cow 5s cubic-bezier(0.62, 0.64, 0.45, 0.97) forwards;
+    margin-top: 20px;
+  }
 
-//   @media screen and (min-width: 768px) {
-//   }
-//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-//     screen and (min-resolution: 192dpi) and (min-width: 768px),
-//     screen and (min-resolution: 2dppx) and (min-width: 768px) {
-//   }
+  .beef div {
+    background-image: url('../../src/images/desktop/cow.png');
+    animation: little-jump 0.2s infinite;
+  }
 
-//   @media screen and (min-width: 1200px) {
-//   }
+  @keyframes running-cow {
+    100% {
+      transform: translatex(100%);
+    }
+  }
 
-//   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-//     screen and (min-resolution: 192dpi) and (min-width: 1200px),
-//     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-//   }
-// .hero-bg-grp {
-//   position: absolute;
-//   left: 36px;
-//   bottom: 255px;
-//   @media screen and (min-width: 768px) {
-//     left: 307px;
-//     bottom: 370px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     left: 475px;
-//     bottom: 540px;
-//   }
-// }
-// .hero-bg__elipse {
-//   width: 346px;
-//   height: 344px;
-//   background-color: #ffa5ba;
-//   border-radius: 50%;
-//   position: absolute;
-//   left: 30%;
-//   @media screen and (min-width: 768px) {
-//     width: 324px;
-//     height: 322px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     width: 538px;
-//     height: 538px;
-//   }
-// }
-// .hero-bg__img {
-//   width: 100%;
-//   height: 100%;
-//   padding-bottom: 70px;
-//   background-repeat: no-repeat;
-//   background-position-x: 45%;
-//   background-image: url('../../src/images/mobile/hero-ice-web.webp');
-//   @media screen and (min-width: 768px) {
-//     background-image: url('../../src/images/tablet/hero-ice-web.webp');
-//     background-position: bottom;
-//     background-position-y: 33px;
-//     background-position-x: 71px;
-//     padding-bottom: 50px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     background-image: url('../../src/images/desktop/hero-ice-web.webp');
-//     background-position: bottom;
-//     background-position-y: 33px;
-//     background-position-x: 71px;
-//     padding-bottom: 50px;
-//   }
-// }
-// .hero-girl {
-//   position: absolute;
-//   bottom: 0;
-//   right: 35px;
-// }
-// .hero-milk {
-//   position: absolute;
-//   bottom: 28px;
-//   @media screen and (min-width: 1280px) {
-//     bottom: 45px;
-//   }
-// }
-// .hero-counter__number::after {
-//   width: 30px;
-//   height: 30px;
-//   background-color: #fff;
-//   box-shadow: ivory;
-// }
+  @keyframes little-jump {
+    0% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
 
-// .box {
-//   animation: rat-opaque 4s ease-in-out forwards;
-//   margin-top: -2.1%;
-// }
-
-// .rat {
-//   width: 60px;
-//   height: 20px;
-//   background-repeat: no-repeat;
-//   background-size: 60px 20px;
-//   z-index: 12;
-// }
-
-// .mouse {
-//   animation: running-rat 3s cubic-bezier(0.62, 0.64, 0.45, 0.97) forwards;
-//   margin-top: 20px;
-// }
-
-// .mouse div {
-//   background-image: url(https://nsm09.casimages.com/img/2021/07/09//21070904503425998217488039.png);
-//   animation: little-jump 0.2s infinite;
-// }
-
-// @keyframes running-rat {
-//   100% {
-//     transform: translatex(100%);
-//   }
-// }
-
-// @keyframes little-jump {
-//   0% {
-//     transform: rotate(-10deg);
-//   }
-//   50% {
-//     transform: rotate(10deg);
-//   }
-//   100% {
-//     transform: rotate(-10deg);
-//   }
-// }
-
-// @keyframes rat-opaque {
-//   0% {
-//     opacity: 1;
-//   }
-//   50% {
-//     opacity: 0.9;
-//   }
-//   100% {
-//     opacity: 0;
-//   }
-// }
+  @keyframes cow-opaque {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}
