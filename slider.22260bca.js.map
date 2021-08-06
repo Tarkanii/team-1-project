@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/slider.js"],"names":["$","slick","infinite","slidesToShow","slidesToScroll","dots"],"mappings":";AAAAA,EAAE,mBAAmBC,MAAM,CACzBC,UAAU,EACVC,aAAc,EACdC,eAAgB,EAChBC,MAAM","file":"slider.22260bca.js","sourceRoot":"../src","sourcesContent":["$('.reviews-slider').slick({\n  infinite: true,\n  slidesToShow: 1,\n  slidesToScroll: 1,\n  dots: true\n});"]}
