@@ -1,0 +1,179 @@
+.reviews {
+  padding-bottom: 86px;
+  padding-top: 80px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 119px;
+    padding-top: 121px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 132px;
+    padding-top: 123px;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+    }
+  }
+
+  &__nav {
+    // background-image: url('../images/quotes.svg');
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    margin-top: 29px;
+    padding-top: 28px;
+    padding-bottom: 20px;
+    background-color: #fafafa;
+
+    @media screen and (min-width: 768px) {
+      width: 620px;
+      height: 164px;
+      padding-bottom: 28px;
+      background-color: rgba(250, 250, 250, 0.4);
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 926px;
+      height: 138px;
+      background-color: #fafafa;
+    }
+  }
+  &__text-box {
+    background-image: url('../images/quotes.svg');
+    background-position: left top, center;
+    background-repeat: no-repeat;
+    padding-top: 15px;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+      width: 544px;
+      height: 106px;
+      background-image: url('../images/quotes.svg');
+      background-position: left top, center;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 822px;
+      height: 74px;
+      background-image: url('../images/quotes.svg');
+      background-position: left top, center;
+      justify-content: center;
+    }
+  }
+  &__text-underline {
+    max-height: 239px;
+    max-width: 180px;
+
+    background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 30px);
+    @media screen and (min-width: 768px) {
+      max-height: 83px;
+      max-width: 524px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 87px;
+      background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 30px);
+    }
+    @media screen and (min-width: 1280px) {
+      max-height: 83px;
+      max-width: 813px;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-bottom: 0;
+      background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 30px);
+    }
+  }
+  &__text {
+    text-align: center;
+    max-width: 157px;
+    max-height: 239px;
+    // background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 30px);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+
+    @media screen and (min-width: 768px) {
+      max-height: 83px;
+      max-width: 499px;
+      font-size: 14px;
+      line-height: 2.15;
+      // background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 30px);
+    }
+    @media screen and (min-width: 1280px) {
+      max-height: 83px;
+      max-width: 750px;
+      font-size: 14px;
+      line-height: 2.15;
+      // background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 30px);
+    }
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 42px;
+    }
+  }
+
+  &__name {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 14px;
+      padding-bottom: 35px;
+      font-size: 16px;
+    }
+  }
+}
+
+.reviews__slide-dots-icon:not(:last-child) {
+  margin-right: 18px;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.slick-dots li.slick-active button {
+  padding: 0;
+  width: 13px;
+  height: 15px;
+  background-color: transparent;
+  background-image: url(../images/vector.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

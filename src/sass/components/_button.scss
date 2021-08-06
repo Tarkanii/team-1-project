@@ -1,0 +1,26 @@
+.accent-button {
+  border: none;
+  color: var(--clear-white);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+    animation-name: pulse;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+  }
+}
+.secondary-button {
+  border: none;
+  color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--clear-white);
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover);
+    animation-name: pulse;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+  }
+}
