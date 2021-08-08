@@ -73,7 +73,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--clear-white);
-  width: 218px;
+  width: 225px;
   margin: 0;
   &-accent {
     color: var(--accent-color);
@@ -99,7 +99,6 @@
 .hero-counter {
   display: none;
   width: 50px;
-  height: 50px;
   &__item:not(:last-child) {
     margin-bottom: 13px;
     @media screen and (min-width: 1280px) {
@@ -157,6 +156,7 @@
 
 .hero__btn {
   &-list {
+    margin-top: 25px;
     display: flex;
   }
 
@@ -173,9 +173,6 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 14px;
-  }
-  &-item {
-    margin-top: 25px;
   }
   &-item:not(:last-child) {
     margin-right: 8px;
